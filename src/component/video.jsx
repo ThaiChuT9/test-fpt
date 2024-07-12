@@ -44,7 +44,7 @@ const video = () => {
                     allowFullScreen
                 ></iframe>
             </div>
-            <div className="mt-10 grid grid-cols-2 gap-4">
+            <div className="mt-14 grid grid-cols-2 gap-4">
                 {clip.slice(1, 5).map((video, index) => (
                     <div key={index} className="p-4">
                         <iframe
