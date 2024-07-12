@@ -63,7 +63,7 @@ const video = () => {
                                 ))}
                             </div>
                         </div>
-                        <p className="text-gray-700 mt-1 text-start">{video.desc}</p>
+                        <p className="mt-1 text-start">{video.desc}</p>
                     </div>
                 ))}
             </div>
