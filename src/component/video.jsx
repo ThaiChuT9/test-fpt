@@ -2,7 +2,7 @@ import React from 'react'
 import { StarIcon } from '@heroicons/react/24/solid'
 
 // MyClip.json
-const clip = [
+const MyClip = [
     {
         "title": "Video",
         "desc": "Description for video 1",
@@ -39,14 +39,14 @@ const video = () => {
                 <iframe
                     width="720"
                     height="405"
-                    src={convertToEmbedUrl(clip[0].url)}
-                    title={clip[0].title}
+                    src={convertToEmbedUrl(MyClip[0].url)}
+                    title={MyClip[0].title}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                 ></iframe>
             </div>
             <div className="mt-14 grid sm:grid-cols-1 lg:grid-cols-2 gap-4">
-                {clip.slice(1, 5).map((video, index) => (
+                {MyClip.slice(1, 5).map((video, index) => (
                     <div key={index} className="p-4">
                         <iframe
                             width="100%"
