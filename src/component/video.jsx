@@ -32,7 +32,7 @@ const clip = [
 const video = () => {
     const convertToEmbedUrl = (url) => url.replace("youtu.be/", "youtube.com/embed/").split('?')[0];
     return (
-        <div className='pt-10 container mx-auto text-center'>
+        <div className='pt-10 container mx-auto px-20 text-center'>
             <h1 className='font-bold text-blue-800 text-2xl'>My clip</h1>
             <div className="mt-5 flex justify-center">
                 <iframe
@@ -44,7 +44,7 @@ const video = () => {
                     allowFullScreen
                 ></iframe>
             </div>
-            <div className="mt-14 grid grid-cols-2 gap-4">
+            <div className="mt-14 grid sm:grid-cols-1 lg:grid-cols-2 gap-4">
                 {clip.slice(1, 5).map((video, index) => (
                     <div key={index} className="p-4">
                         <iframe
