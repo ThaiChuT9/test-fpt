@@ -32,7 +32,7 @@ const clip = [
 const video = () => {
     const convertToEmbedUrl = (url) => url.replace("youtu.be/", "youtube.com/embed/").split('?')[0];
     return (
-        <div className='pt-5 container mx-auto text-center'>
+        <div className='pt-10 container mx-auto text-center'>
             <h1 className='font-bold text-blue-800 text-2xl'>My clip</h1>
             <div className="mt-5 flex justify-center">
                 <iframe
